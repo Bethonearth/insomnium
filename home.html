@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Insomnium Corp - About Us</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #fff; /* White background color */
+            color: #000; /* Black text color */
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            font-size: 18px; /* Increased font size */
+        }
+
+        header {
+            background-color: #616161; /* Updated color for the header */
+            color: #fff;
+            text-align: left; /* Align text to the left */
+            width: 100%;
+            padding: 10px; /* Added padding for spacing */
+            box-sizing: border-box; /* Include padding in width calculation */
+            z-index: 1000;
+            display: flex; /* Added flex display */
+            align-items: center; /* Center items vertically */
+            justify-content: left; /* Added space between items */
+        }
+
+        header img {
+            width: 10%; /* Adjusted width */
+            height: auto;
+            margin-right: 10px; /* Adjusted margin for spacing */
+            display: block; /* Ensure proper block-level display */
+        }
+
+        header .title-img {
+            width: 32%; /* Adjusted width for the title image */
+            max-height: 100%; /* Maintain aspect ratio */
+            margin-right: 10px; /* Adjusted margin for spacing */
+        }
+
+        .tabs {
+            display: flex;
+            gap: 20px;
+            justify-content: flex-end; /* Align tabs to the right */
+            width: 100%;
+            height: 80px;
+            margin-right: 20px;
+        }
+
+        .tabs a {
+            color: #d08824; /* Updated color for link */
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 16px; /* Adjusted font size */
+        }
+
+        main {
+            width: 75%; /* Adjusted width */
+            max-width: 90%; /* Adjusted max-width */
+            margin: 2% auto; /* Adjusted margin */
+            display: flex; /* Added flex display */
+            flex-wrap: wrap; /* Allow items to wrap to the next line */
+            justify-content: space-between; /* Added space between items */
+        }
+
+        #about-us {
+            max-width: 48%; /* Adjusted width */
+            margin-right: 2%; /* Added margin to the right */
+            text-align: left; /* Align text to the left */
+        }
+
+        #robert-mezzo {
+            max-width: 28%; /* Adjusted width */
+            margin-bottom: 2%; /* Added margin to the bottom */
+        }
+
+        #video, #dreamscape {
+            max-width: 48%; /* Adjusted width */
+            margin: 0; /* Removed margin */
+        }
+
+        #dreamscape {
+            margin-left: 2%; /* Added margin to the left */
+        }
+
+        h2, h3, h4, h5, h6 {
+            color: #d08824; /* Updated color for headings */
+        }
+
+        a {
+            color: #d08824; /* Updated color for link */
+        }
+
+        footer {
+            background-color: #616161; /* Updated color for the footer */
+            color: #fff;
+            text-align: center;
+            padding: 2%; /* Adjusted padding */
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <img src="Insomnium_Logo_Finished.png" alt="Insomnium Corp Logo">
+        <img class="title-img" src="Insomnium_corp_title.jpg" alt="Insomnium Corp Title">
+        <div class="tabs">
+            <a href="#">Home</a>
+            <a href="staff_login.html">Log In</a>
+        </div>
+    </header>
+
+    <main>
+        <section id="about-us">
+            <h2>About Us</h2>
+            <p>From a humble beginning, Robert Mezzo inherited Insomnium Corp from his late father. From that inheritance grew the largest company in the medical and tech field. Robert and his team of engineers and scientists or as we like to call them Scienteers™. Recently you may have heard about us from our newest invention the DREAMSCAPE™. Insomnium Corp prides itself on its innovative research to make the world a better place to live.</p>
+            <!-- Additional information can be added here -->
+        </section>
+
+        <section id="robert-mezzo">
+            <img src="Robert_Mezzo.png" alt="Robert Mezzo Photo">
+        </section>
+
+        <section id="video">
+            <video width="100%" height="auto" controls>
+                <source src="insomnium intro.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </section>
+
+        <section id="dreamscape">
+            <h2>Introducing the Brand New DREAMSCAPE!</h2>
+            <p>Utilizing innovative, patent-pending technology, the Dreamscape can put you into a lucid dream that allows you to experience exceptional "vacations" from the comfort of your home. What and where is up to you, the only limit is your imagination. Find out more about the Dreamscape <a href="https://www.youtube.com/channel/UCld64NnfHcrrKA3nMfbO-pQ" target="_blank">here</a>.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Insomnium Corp. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
+

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Management</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #616161;
+            color: #ffffff;
+            text-align: left;
+            padding: 1em;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        #logo {
+            max-width: 10%;
+            height: auto;
+            margin-right: 20px;
+        }
+
+        #title {
+            max-width: 32%;
+            height: auto;
+            margin-right: 20px;
+        }
+
+        section {
+            padding: 20px;
+            background-color: #ffffff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+            text-align: center;
+        }
+
+        #login-form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        input, button {
+            margin: 5px 0;
+        }
+
+        h1 {
+            color: #FFFFFF;
+        }
+
+        /* Message Service Styles */
+        #message-container {
+            margin-top: 20px;
+            border: 1px solid #d08824;
+            padding: 10px;
+            overflow-y: scroll;
+            max-height: 200px;
+            border-radius: 5px;
+        }
+
+        .message {
+            margin-bottom: 10px;
+        }
+
+        .sender-sandra {
+            font-weight: bold;
+            color: #d08824;
+        }
+
+        .sender-carol {
+            font-weight: bold;
+            color: #616161;
+        }
+
+        #message-input {
+            margin-top: 10px;
+            display: flex;
+            align-items: center;
+        }
+
+        #message-text {
+            flex: 1;
+            padding: 8px;
+            border: 1px solid #d08824;
+            border-radius: 5px;
+            margin-right: 10px;
+        }
+
+        #send-button {
+            padding: 8px 15px;
+            background-color: #d08824;
+            color: #ffffff;
+            cursor: pointer;
+            border: none;
+            border-radius: 5px;
+        }
+
+        #error-message {
+            color: #ff0000;
+            margin-top: 10px;
+        }
+
+        /* Media Queries for Responsiveness */
+        @media (max-width: 600px) {
+            #logo,
+            #title {
+                max-width: 100%;
+                height: auto;
+                margin-right: 10px;
+            }
+
+            section {
+                padding: 10px;
+            }
+
+            h2 {
+                font-size: 1.5em;
+            }
+
+            #message-container {
+                max-height: 150px;
+            }
+        }
+	</style>
+</head>
+
+<body>
+    <header>
+        <div>
+            <img id="logo" src="Insomnium_Logo_Finished.png" alt="Insomnium Corp Logo">
+            <img id="title" src="Insomnium_corp_title.png" alt="Insomnium Corp Title">
+            <h1>Management</h1>
+        </div>
+    </header>
+    <section>
+        <h2>Recent Security Alert</h2>
+        <p>Recently, an employee found a USB outside Insomnium Corp Headquarters containing this audio. We are lucky that an employee found it, as if this were to come out, we would be in serious trouble. <strong>PLEASE KEEP AN EYE OUT FOR ANY OTHER ATTEMPTS AT WHISTLEBLOWING!!!!</strong></p>
+        <a href="https://www.youtube.com/watch?v=BbeeuzU5Qc8" target="_blank">
+            <button>Listen to the Audio</button>
+        </a>
+    </section>
+    <section>
+        <h2>The Whistle blower</h2>
+        <p>We have Identified the attempted Whistle Blower as Sandra Adams, we are monitoring her instagram page <strong>s_adams03</strong> however have not seen any other attempt to leak insider information. Please keep an eye out on any other employees as we suspect she is not working alone </p>
+    </section>
+</body>
+</html>

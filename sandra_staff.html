@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sandra's Staff Page - Insomnium Corp</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #616161;
+            color: #ffffff;
+            text-align: left;
+            padding: 1em;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        #logo {
+            max-width: 10%;
+            height: auto;
+            margin-right: 20px;
+        }
+
+        #title {
+            max-width: 32%;
+            height: auto;
+            margin-right: 20px;
+        }
+
+        #employee-info {
+            text-align: right;
+        }
+
+        section {
+            margin: 20px;
+            padding: 20px;
+            background-color: #ffffff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+        }
+
+        h2 {
+            color: #616161;
+        }
+
+        p {
+            margin: 10px 0;
+        }
+
+        /* Message Service Styles */
+        #message-container {
+            margin-top: 20px;
+            border: 1px solid #d08824;
+            padding: 10px;
+            overflow-y: scroll;
+            max-height: 200px;
+            border-radius: 5px;
+        }
+
+        .message {
+            margin-bottom: 10px;
+        }
+
+        .sender-sandra {
+            font-weight: bold;
+            color: #d08824;
+        }
+
+        .sender-carol {
+            font-weight: bold;
+            color: #616161;
+        }
+
+        #message-input {
+            margin-top: 10px;
+            display: flex;
+            align-items: center;
+        }
+
+        #message-text {
+            flex: 1;
+            padding: 8px;
+            border: 1px solid #d08824;
+            border-radius: 5px;
+            margin-right: 10px;
+        }
+
+        #send-button {
+            padding: 8px 15px;
+            background-color: #d08824;
+            color: #ffffff;
+            cursor: pointer;
+            border: none;
+            border-radius: 5px;
+        }
+
+        #error-message {
+            color: #ff0000;
+            margin-top: 10px;
+        }
+
+        /* Media Queries for Responsiveness */
+        @media (max-width: 600px) {
+            #logo,
+            #title {
+                max-width: 100%;
+                height: auto;
+                margin-right: 10px;
+            }
+
+            section {
+                margin: 10px;
+                padding: 10px;
+            }
+
+            h2 {
+                font-size: 1.5em;
+            }
+
+            #message-container {
+                max-height: 150px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div>
+            <img id="logo" src="Insomnium_Logo_Finished.png" alt="Insomnium Corp Logo">
+            <img id="title" src="Insomnium_corp_title.png" alt="Insomnium Corp Title">
+            <h1>Staff Page</h1>
+        </div>
+        <div id="employee-info">
+            <p>Employee number: 655506</p>
+            <p>Sandra Adams</p>
+        </div>
+    </header>
+
+    <section>
+        <h2>Employee Information</h2>
+        <p><strong>Name:</strong> Sandra</p>
+        <p><strong>Position:</strong> RECEPTIONIST</p>
+        <p><strong>Email:</strong> sandradreamco@gmail.com</p>
+        <p><strong>Phone:</strong> [REDACTED]</p>
+    </section>
+
+    <!-- Message Service -->
+    <section id="message-container">
+        <div class="message">
+            <span class="sender-sandra">01/08/2026 Sandra:</span> hey have you heard about this promotion thing?
+        </div>
+        <div class="message">
+            <span class="sender-carol">01/08/2026 Carol:</span> No, corporate didn't tell me about any new positions.
+        </div>
+        <div class="message">
+            <span class="sender-sandra">01/08/2026 Sandra:</span> I'm not supposed to say much about it, but I think it's some test group
+            thing. They're saying they'll up my pay if I do it.
+        </div>
+        <div class="message">
+            <span class="sender-carol">01/08/2026 Carol:</span> ooh that sounds nice, no idea what they're testing tho.
+        </div>
+        <div class="message">
+            <span class="sender-carol">12/10/2026 Carol:</span> Hey Sandra, where the hell have you been, you just stopped showing up to work. Has this got anything to do with that promotion?
+        </div>
+        <!-- Add more messages as needed -->
+    </section>
+
+    <!-- Message Input -->
+    <div id="message-input">
+        <input type="text" id="message-text" placeholder="Type your message...">
+        <button id="send-button" onclick="sendMessage()">Send</button>
+    </div>
+
+    <!-- Error Message -->
+    <div id="error-message"></div>
+
+    <script>
+        function sendMessage() {
+            // Check for Insomnium Corp Internet connection (simulated)
+            var isConnectedToInsomniumCorp = false; // Replace with actual check logic
+
+            if (isConnectedToInsomniumCorp) {
+                // Send the message logic can go here (not implemented in this example)
+                // For now, just clear the input field
+                document.getElementById("message-text").value = "";
+            } else {
+                // Display error message
+                document.getElementById("error-message").textContent = "You can only send messages whilst connected to an Insomnium Corp Internet connection";
+            }
+        }
+    </script>
+</body>
+</html>
