@@ -14,7 +14,7 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-            justify-content: center;
+
             font-size: 18px; /* Increased font size */
         }
 
@@ -61,32 +61,36 @@
         }
 
         main {
-            width: 60%; /* Adjusted width */
+            width: 80%; /* Adjusted width */
             display: flex; /* Added flex display */
             flex-wrap: wrap; /* Allow items to wrap to the next line */
             justify-content: space-between; /* Added space between items */
         }
 
         #about-us {
-            width: 40%; /* Adjusted width */
+            width: 50% /* Adjusted width */
              margin-right: 2%;/* Added margin to the right */
-            text-align: left; /* Align text to the left */
+             margin-left: 2%;/* Added margin to the right */
+		
+            text-align: right; /* Align text to the left */
         }
 
         #robert-mezzo {
-            max-width: 15%; /* Adjusted width */
-            max-height: 15%;
-            margin-bottom: 1%; /* Added margin to the bottom */
+            max-width: 600px; /* Adjusted width */
+            margin-bottom: 3%; /* Added margin to the bottom */
+            text-align: right;
+
         }
 
         #video, #dreamscape {
-            max-width: 48%; /* Adjusted width */
-            margin: 0; /* Removed margin */
+
+             text-align: right;
         }
 
         #dreamscape {
-            width: 48%; 
-            margin-left: 2%; /* Added margin to the left */
+            width: 70%; 
+            margin-left: 11%; /* Added margin to the left */
+            text-align: left;
         }
 
         h2, h3, h4, h5, h6 {
@@ -118,7 +122,7 @@
     </header>
 
     <main>
-        <table>
+        <table style= "text-align: center;">
         <tr> 
             <th> 
                 <section id="about-us">
@@ -128,14 +132,14 @@
             </th>
             <th>
                 <section id="robert-mezzo">
-                     <img src="RobertMezzoPicture.jpg" alt="Robert Mezzo Photo">
+                     <img src="RobertMezzoPicture.png" alt="Robert Mezzo Photo">
                 </section>
             </th>
         </tr>
             <tr>
                 <th>
         <section id="video">
-            <iframe src="https://www.youtube.com/embed/cap2uWUyJ0w?si=1AQGL6QziOoUoz6Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" ></iframe>
+            <iframe width="560px" height="320px" src="https://www.youtube.com/embed/cap2uWUyJ0w?si=1AQGL6QziOoUoz6Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" ></iframe>
         </section>
                 </th>
                 <th>
@@ -158,4 +162,3 @@
 
 </body>
 </html>
-
