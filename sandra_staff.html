@@ -244,9 +244,6 @@
             <div class="message">
                 <span class="sender-carol">12/10/2026 Carol:</span> Hey Sandra, where the hell have you been, you just stopped showing up to work. Has this got anything to do with that promotion?
             </div>
-            <div class="message">
-                <span class="sender-sandra">12/10/2026 Sandra:</span> There are too many prying eyes, they are looking for me. Email me instead. IT can't check them.
-            </div>
             <!-- Add more messages as needed -->
         </div>
         <div id="message-typing" class="chat-bubble" style="display:none">
@@ -271,12 +268,12 @@
         const responses = [
             {
                 "find": "hello",
-                "msg": "who are you? how did you get into Sandras account?",
+                "msg": "Who are you? How did you get into Sandras account?",
                 "delay": 3000
             },
             {
                 "find": "hi",
-                "msg": "who are you? how did you get into Sandras account?",
+                "msg": "Who are you? How did you get into Sandras account?",
                 "delay": 3000
             },
             {
@@ -290,6 +287,11 @@
                 "delay": 6000
             },
             {
+                "find": "evidence",
+                "msg": "Hopefully you were able to find information we weren't. Sandra is safe with me, but we don't know what to do. Should we go to Police or the News or is there someone else we can go to?",
+                "delay": 6000
+            },
+            {
                 "find": "sandra",
                 "msg": "How do you know about Sandra?",
                 "delay": 6000
@@ -297,12 +299,12 @@
             {
                 "find": "police",
                 "msg": "Okay, we'll go to the police. https://www.youtube.com/watch?v=o5S5PFUZ6e8",
-                "delay": 2000
+                "delay": 3000
             },
             {
                 "find": "news",
                 "msg": "Okay, we'll go to the news. https://www.youtube.com/watch?v=TXWLGQuoj60",
-                "delay": 2000
+                "delay": 3000
             },
             {
                 "find": "mark",
@@ -310,9 +312,14 @@
                 "delay": 4000
             },
             {
+                "find": "no",
+                "msg": "Okay, should we go to the Police or News then?",
+                "delay": 2000
+            },
+            {
                 "find": "yes",
                     "msg":"Okay, we'll go to Mark. https://www.youtube.com/watch?v=3Ahz44L01i8",
-                "delay": 2000
+                "delay": 3000
             }
         ]
 
